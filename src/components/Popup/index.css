@@ -1,0 +1,60 @@
+.popup-div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    min-height: 95vh;
+}
+
+.inside-popup-div {
+    display: flex;
+    padding: 50px;
+    padding-bottom: 20px;
+    flex-direction: column;
+    border-style: solid;
+    border-width: 20px;
+    align-items: center;
+    min-width: 1000px;
+}
+
+.inside-popup-div button {
+    font-family: 'Mobsters';
+    font-size: 50px;
+    margin-top: 20px;
+    margin-bottom: 0;
+    background-color: white;
+    padding-left: 20px;
+    padding-right: 20px;
+    transition-duration: 0.7s;
+}
+
+.inside-popup-div button:hover {
+    color: white;
+    background-color: black;
+}
+
+.Title {
+    margin: 0;
+    font-size: 150px;
+    color: red;
+}
+.rule-text {
+    margin: 0;
+    align-self: center;
+    font-size: 30px;
+    min-width: 60%;
+}
+
+#win {
+    color: blue;
+}
+
+#buttons {
+    display: flex;
+    gap: 5px;
+}
+#buttons button{
+    font-size: 35px;
+    margin-top: 0;
+    border-radius: 0;
+}

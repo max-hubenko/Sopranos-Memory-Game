@@ -1,0 +1,33 @@
+#header-container {
+    display: flex;
+    scale: 80%;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0;
+}
+
+#title-img {
+    align-self: center;
+    max-width: 420px;
+    margin-bottom: -5px;
+}
+
+#scoreboard {
+    align-self: center;
+    width: fit-content;
+    display: flex;
+    gap: 20px;
+    justify-content: space-between;
+}
+
+#title {
+    align-self: center;
+    font-size: 50px;
+    margin: -10px;
+}
+
+#scoreboard p {
+    margin-top: 0;
+    font-size: 35px;
+    margin-bottom: 0;
+}

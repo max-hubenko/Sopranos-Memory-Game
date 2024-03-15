@@ -1,35 +1,56 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import { useState } from "react"
+import Header from "./components/Header"
+import Popup from "./components/Popup"
+import Sound from "./components/Sound"
+import Cards from "./components/Cards";
+import "./App.css"
+
 
 function App() {
-  const [count, setCount] = useState(0)
+  const [isOpen, setisOpen] = useState(true);
+  const [popupType, setpopupType] = useState('start');
+  const [currentScore, setScore]= useState(0);
+  const [highScore, setHighScore]= useState(0);
+  
+
+  function closePopup(restart) {
+      if (restart) {
+        setpopupType('start');
+      } else {
+        setisOpen(!isOpen);
+      }
+  }
+
+  function incrementScore() {
+     setScore(prevScore => prevScore + 1);
+     setHighScore(Math.max(highScore, currentScore + 1));
+  }
+  function resetScore() {
+    setScore(0);
+  }
+
+  function lose() {
+    setisOpen(true);
+    resetScore();
+    setpopupType('lose');
+  }
+
+  function win() {
+    setisOpen(true);
+    setpopupType('win');
+  }
 
   return (
     <>
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
-  )
+      <Sound/>
+      {isOpen ? <Popup type={popupType} handleClick={closePopup} /> : 
+        <div className="main-container">
+          <Header class="header-comp" high_score={highScore}current_score={currentScore}/>
+          <Cards className="cards-comp"/>
+          {/* <button onClick={lose}>Lose</button>
+          <button onClick={win}>Win</button>
+          <button onClick={incrementScore}>inc score</button> */}
+        </div>}
+    </>)
 }
-
 export default App
