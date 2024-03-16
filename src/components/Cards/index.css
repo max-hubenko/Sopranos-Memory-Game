@@ -35,14 +35,13 @@
     box-shadow: 0 5px 15px;
 }
 .card-img {
-    width: 200px;
-    height: auto;
-    margin: 0;
+    width: 150px;
+    height: 150px;
+    margin: 5px;
+    -webkit-user-drag: none;
+    user-select: none;
 }
 
 .names {
-    position: relative;
-    top: 50px;
-    margin: 5px;
     font-size: 30px;
 }

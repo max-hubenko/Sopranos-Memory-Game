@@ -12,20 +12,29 @@ function getRandomElements(arr, count) {
     return shuffled.slice(0, count);
 }
 
-function Cards() {
+
+// eslint-disable-next-line react/prop-types
+function Cards({handleLose, handleScore}) {
     let [cardArray, setcardArray] = useState(getRandomElements(cardsArray,8));
-    // let [pickedCards, setpickedCards] = useState([]);
+    let [pickedCards, setpickedCards] = useState([]);
+
+    
 
     function shuffle(key) {
-        // setpickedCards(prevpickedCards => prevpickedCards.append(key));
-        setcardArray(prevCardArray => getRandomElements(prevCardArray, 8));
+        if (pickedCards.includes(key)) {
+            handleLose();
+        } else {
+            setpickedCards(prevpickedCards => [...prevpickedCards, key]);
+            setcardArray(prevCardArray => getRandomElements(prevCardArray, 8));
+            handleScore();
+        }
     }
 
     return(
         <div className="cards-div">
             {cardArray.map((card) => 
                 <div onClick={() => shuffle(card.name)} key={card.name} className="card"> 
-                    <img className="card-img" src={ducks}></img>
+                    <img className="card-img" src={card.src}></img>
                     <p className="names">{card.name}</p> 
                 </div>
             )}

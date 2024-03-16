@@ -1,105 +1,127 @@
-import "../../assets/sopranosDucks.jpg";
+import ajSopranoImg from "../../assets/characters/AJ_soprano.jpg";
+import janiceSopranoImg from "../../assets/characters/Janice_Soprano.jpeg";
+import uncleJuniorImg from "../../assets/characters/Uncle_Junior.jpeg";
+import adrianaLaCervaImg from "../../assets/characters/Adriana_La_Cerva.jpeg";
+import liviaSopranoJpegImg from "../../assets/characters/Livia_Soprano.jpeg";
+import bigPussyImg from "../../assets/characters/Big_Pussy.jpeg";
+import caremelaSopranoImg from "../../assets/characters/Caremela_Soprano.jpeg";
+import philLeotardoImg from "../../assets/characters/Phil_Leotardo.jpeg";
+import artieBuccoImg from "../../assets/characters/artie-bucco.jpeg";
+import bobbyBaccalaImg from "../../assets/characters/bobby_baccala.jpeg";
+import chrisImg from "../../assets/characters/chris.jpeg";
+import charmaineBuccoImg from "../../assets/characters/Charmaine_bucco.jpeg";
+import ralphCiffarettoImg from "../../assets/characters/Ralph_ciffaretto.jpeg";
+import meadowSopranoImg from "../../assets/characters/meadow_soprano.jpeg";
+import drMelfiImg from "../../assets/characters/Dr_melfi.jpeg";
+import silvioDanteImg from "../../assets/characters/Silvio_Dante.jpeg";
+import paulieWalnutsImg from "../../assets/characters/paulie_walnuts.jpeg";
+import furioGiuntaImg from "../../assets/characters/Furio_Giunta.jpeg";
+import tonySopranoImg from "../../assets/characters/Tony_Soprano.jpeg";
+import vitoSpataforeImg from "../../assets/characters/vito-spatafore.jpeg";
+
+
 
 export let cardsArray = [
 
 {
     name: "Tony Soprano",
-    src: "../../assets/sopranosDucks.jpg",
+    src: tonySopranoImg,
 },
 
 {
     name: "Chrissy Moltisanti",
-    src: "../../assets/sopranosDucks.jpg",
+    src: chrisImg,
 },
 
 {
     name: "Carmela Soprano",
-    src: "../../assets/sopranosDucks.jpg",
+    src: caremelaSopranoImg,
+
 },
 
 {
     name: "Paulie Walnuts",
-    src: "../../assets/sopranosDucks.jpg",
+    src: paulieWalnutsImg,
 },
 
 {
     name: "Meadow Soprano",
-    src: "../../assets/sopranosDucks.jpg",
+    src: meadowSopranoImg,
 },
 
 {
     name: "Uncle Junior",
-    src: "../../assets/sopranosDucks.jpg",
+    src: uncleJuniorImg,
 },
 
 {
     name: "AJ Soprano",
-    src: "../../assets/sopranosDucks.jpg",
+    src: ajSopranoImg,
 },
 
 {
     name: "Dr. Melfi",
-    src: "../../assets/sopranosDucks.jpg",
+    src: drMelfiImg,
 },
 
 {
     name: "Silvio Dante",
-    src: "../../assets/sopranosDucks.jpg",
+    src: silvioDanteImg,
 },
 
 {
     name: "Livia Soprano",
-    src: "../../assets/sopranosDucks.jpg",
+    src: liviaSopranoJpegImg,
 },
 
 {
     name: "Big Pussy",
-    src: "../../assets/sopranosDucks.jpg",
+    src: bigPussyImg,
 },
 
 {
     name: "Adriana La Cerva",
-    src: "../../assets/sopranosDucks.jpg",
+    src: adrianaLaCervaImg,
 },
 
 {
     name: "Ralph Ciffareto",
-    src: "../../assets/sopranosDucks.jpg",
+    src: ralphCiffarettoImg,
 },
 
 {
     name: "Janice Soprano",
-    src: "../../assets/sopranosDucks.jpg",
+    src: janiceSopranoImg,
 },
 
 {
     name: "Artie Bucco",
-    src: "../../assets/sopranosDucks.jpg",
+    src: artieBuccoImg,
 },
 
 {
     name: "Charmaine Bucco",
-    src: "../../assets/sopranosDucks.jpg",
+    src: charmaineBuccoImg,
 },
 
 {
     name: "Bobby Baccaleiri",
-    src: "../../assets/sopranosDucks.jpg",
+    src: bobbyBaccalaImg,
 },
 
 {
     name: "Phil Leotardo",
-    src: "../../assets/sopranosDucks.jpg",
+    src: philLeotardoImg,
 },
 
 {
     name: "Furio Giunta",
-    src: "../../assets/sopranosDucks.jpg",
+    src: furioGiuntaImg,
 },
 
 
 {
     name: "Vito Spatafore",
-    src: "../../assets/sopranosDucks.jpg",
+    src: vitoSpataforeImg,
 },
 ]
