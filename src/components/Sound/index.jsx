@@ -6,7 +6,7 @@ import "./index.css";
 
 
 function Sound() {
-    const [volToggle, setVolToggle] = useState(true);
+    const [volToggle, setVolToggle] = useState(false);
 
     function handleClick() {
         setVolToggle(!volToggle);
