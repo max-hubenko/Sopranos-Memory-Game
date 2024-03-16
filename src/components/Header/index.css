@@ -4,7 +4,17 @@
     flex-direction: column;
     justify-content: center;
     margin: 0;
+    transition: 0.5s;
 }
+
+#header-container:hover {
+    display: flex;
+    scale: 90%;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0;
+}
+
 
 #title-img {
     align-self: center;

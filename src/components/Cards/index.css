@@ -4,7 +4,7 @@
     width: 70%;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr;
-    gap: 10px;
+    gap: 20px;
     justify-items: center;
     margin: 10px;
 }
@@ -19,6 +19,20 @@
     outline-width: 3px;
     justify-content: center;
     align-items: center;
+    transition: 0.5s;
+}
+
+.card:hover {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    outline: solid;
+    border-radius: 20px;
+    outline-width: 3px;
+    justify-content: center;
+    align-items: center;
+    scale: 105%;
+    box-shadow: 0 5px 15px;
 }
 .card-img {
     width: 200px;

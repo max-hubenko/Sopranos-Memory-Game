@@ -8,22 +8,23 @@ function getRandomElements(arr, count) {
       .map((value) => ({ value, sort: Math.random() }))
       .sort((a, b) => a.sort - b.sort)
       .map(({ value }) => value);
-  
+
     return shuffled.slice(0, count);
-  }
+}
 
 function Cards() {
     let [cardArray, setcardArray] = useState(getRandomElements(cardsArray,8));
+    // let [pickedCards, setpickedCards] = useState([]);
 
-
-    function shuffle() {
+    function shuffle(key) {
+        // setpickedCards(prevpickedCards => prevpickedCards.append(key));
         setcardArray(prevCardArray => getRandomElements(prevCardArray, 8));
     }
 
     return(
         <div className="cards-div">
             {cardArray.map((card) => 
-                <div onClick={shuffle} key={card.name} className="card"> 
+                <div onClick={() => shuffle(card.name)} key={card.name} className="card"> 
                     <img className="card-img" src={ducks}></img>
                     <p className="names">{card.name}</p> 
                 </div>

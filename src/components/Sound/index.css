@@ -4,10 +4,12 @@
     top: 5px;
     right: 5px;
     z-index: 1000;
-    
-
 }
 
-#silence {
-    display: none;
+.volume-button:hover {
+    width: 35px;
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    z-index: 1000;
 }
